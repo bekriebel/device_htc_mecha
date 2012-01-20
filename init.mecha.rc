@@ -80,6 +80,17 @@ on boot
     chown system system /sys/module/msm72k_udc/parameters/mdm_port_enabled
     chown system system /sys/module/smsc251x/parameters/hub_enabled
 
+    # Permissions for Camera
+    chmod 0666 /dev/msm_camera/config0
+    chmod 0666 /dev/msm_camera/control0
+    chmod 0666 /dev/msm_camera/frame0
+    chmod 0666 /dev/msm_camera/config1
+    chmod 0666 /dev/msm_camera/control1
+    chmod 0666 /dev/msm_camera/frame1
+    chmod 0666 /dev/graphics/fb0
+    chmod 0666 /dev/video20
+    chmod 0666 /dev/pmem_adsp
+
 service ril-ims-daemon /system/bin/rild_ims
     class main
     socket rild-ims stream 660 root radio
