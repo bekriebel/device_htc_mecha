@@ -44,6 +44,14 @@
 #genlock
 /dev/genlock            0666    root        root
 
+# Permissions for Camera
+/dev/msm_camera/config0 0666 system system
+/dev/msm_camera/control0 0666 system system
+/dev/msm_camera/frame0 0666 system system
+/dev/msm_camera/config1 0666 system system
+/dev/msm_camera/control1 0666 system system
+/dev/msm_camera/frame1 0666 system system
+
 #bluetooth
 /dev/ttyHS0             0600    bluetooth   bluetooth
 /dev/ttyMSM0            0600    bluetooth   bluetooth

@@ -104,7 +104,8 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm7x30 \
     gps.mecha \
     libaudioutils \
-    libtinyalsa
+    libtinyalsa \
+    camera.msm7x30
 
 # Input device calibration files
 PRODUCT_COPY_FILES += \
